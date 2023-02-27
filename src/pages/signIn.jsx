@@ -20,7 +20,7 @@ return (
     <div>
         <center>
         {value?<Home/>:
-        <button onClick={handleClick}>Signin With Google</button>
+        <button onClick={handleClick}><i class="ri-google-line"></i>&nbsp;Signin With Google</button>
         }
         </center>
     </div>
