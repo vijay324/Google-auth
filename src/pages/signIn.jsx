@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {auth,provider} from "./firebase";
 import {signInWithPopup} from "firebase/auth";
-import Home from "./Home";
+import Home from "./Home";  
 
 function SignIn(){
     const [value,setValue] = useState('')
@@ -11,6 +11,7 @@ function SignIn(){
             localStorage.setItem("email",data.user.email)
         })
     }
+    console.log("hi new user");
 
     useEffect(()=>{
         setValue(localStorage.getItem('email'))
